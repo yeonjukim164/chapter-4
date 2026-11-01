@@ -5,4 +5,5 @@ offline_store:
   type: file
 online_store:
   type: redis
-  connection_string: "localhost:6379,password=jGFUi48jvD"
+  # Valkey (Redis 호환, 책의 Redis 대체). 주소/비밀번호는 homelab.env 에서 설정
+  connection_string: "${VALKEY_ADDR},password=${VALKEY_PASSWORD}"

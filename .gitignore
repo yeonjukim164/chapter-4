@@ -1,2 +1,8 @@
 myvenv
 myvenv2
+.venv
+categorical_variable_plots
+column_list.pkl
+mlflow/categorical_variable_plots
+mlflow/column_list.pkl
+feast/data/online_store.db

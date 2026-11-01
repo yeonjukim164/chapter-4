@@ -9,19 +9,19 @@ import os
 demo_features_parquet_file_source = FileSource(
     file_format=ParquetFormat(),
     path="s3://feature-data-sets/demographic_features.parquet",
-    s3_endpoint_override="http://localhost:9000",
+    s3_endpoint_override=os.environ["FEAST_S3_ENDPOINT_URL"],  # SeaweedFS (homelab.env)
 )
 
 relationship_features_parquet_file_source = FileSource(
     file_format=ParquetFormat(),
     path="s3://feature-data-sets/relationship_features.parquet",
-    s3_endpoint_override="http://localhost:9000",
+    s3_endpoint_override=os.environ["FEAST_S3_ENDPOINT_URL"],  # SeaweedFS (homelab.env)
 )
 
 occupational_features_parquet_file_source = FileSource(
     file_format=ParquetFormat(),
     path="s3://feature-data-sets/occupational_features.parquet",
-    s3_endpoint_override="http://localhost:9000",
+    s3_endpoint_override=os.environ["FEAST_S3_ENDPOINT_URL"],  # SeaweedFS (homelab.env)
 )
 
 
